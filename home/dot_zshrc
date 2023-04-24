@@ -1,0 +1,39 @@
+# shellcheck disable=SC2148
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
+export ZSHRC_PATH=$HOME
+
+# zsh settings
+source $ZSHRC_PATH/.config/dotfiles/zsh/zsh.zsh
+
+# alias
+source $ZSHRC_PATH/.config/dotfiles/shell/alias.sh
+
+# function
+source $ZSHRC_PATH/.config/dotfiles/shell/function.sh
+
+# Homebrew
+if [ -f /opt/homebrew/bin/brew ] || [ -f /usr/local/bin/brew ] || [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
+    source $ZSHRC_PATH/.config/dotfiles/shell/homebrew.sh
+fi
+
+# env
+source $ZSHRC_PATH/.config/dotfiles/shell/env.sh
+
+# PATH
+export FPATH="$HOME/.zfunc:$FPATH"
+export EDITOR='vim'
+
+## Delete the same PATH
+typeset -U PATH
+typeset -U FPATH
+
+# completions
+autoload -Uz compinit; compinit
+
+# starship
+eval "$(starship init zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

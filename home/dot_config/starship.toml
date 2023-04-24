@@ -1,0 +1,55 @@
+# add_newline = false
+format = """
+[┌](bold cyan) \
+$all\
+$fill\
+[┐](bold cyan) \
+$line_break\
+[└](bold cyan) \
+$jobs\
+$battery\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+right_format = """
+$line_break\
+$time[┘](bold cyan)"""
+
+[fill]
+symbol = "─"
+style = "bold cyan"
+disabled = false
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[os]
+disabled = false
+
+[username]
+show_always = true
+
+[[battery.display]]
+threshold = 20
+style = "bold red"
+
+[[battery.display]]
+threshold = 50
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 80
+style = "bold green"
+
+[[battery.display]]
+threshold = 100
+style = "bold cyan"
+
+# RPROMPT
+
+[time]
+disabled = false
+time_format = "%F %T"

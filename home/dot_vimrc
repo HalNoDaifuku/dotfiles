@@ -1,0 +1,17 @@
+" My settings
+syntax on
+filetype plugin indent on
+set number
+set list
+set backspace=indent,eol,start
+set shiftwidth=4
+set tabstop=4
+set autoread
+set showcmd
+set cursorline
+set wildmenu
+set incsearch
+set hlsearch
+set showmatch
+set smartindent
+set expandtab
