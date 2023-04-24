@@ -1,4 +1,6 @@
+.git
 *.bak
+README.md
 
 # MacOS
 .DS_Store
