@@ -30,7 +30,7 @@ function update-all() {
         mas upgrade
     fi
 
-    if type vim > /dev/null 2>&1 || [ -d ~/.cache/dein ]; then
+    if type vim > /dev/null 2>&1 && [ -d ~/.cache/dein ]; then
         vim -c "call dein#update() | q"
     fi
 
