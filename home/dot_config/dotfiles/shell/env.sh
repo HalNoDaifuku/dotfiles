@@ -10,7 +10,9 @@ export LESS_TERMCAP_us=$'\E[1;32m'
 export LESS_TERMCAP_ue=$'\E[0m'
 
 # Rust
-source "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
 
 if type sccache > /dev/null 2>&1; then
     export RUSTC_WRAPPER=$(which sccache)
