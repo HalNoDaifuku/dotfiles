@@ -1,4 +1,4 @@
-hs.hotkey.bind({"ctrl"}, "space", function()
+hs.hotkey.bind({"option"}, "space", function()
     local app = hs.application.get("kitty")
     if app then
         if not app:mainWindow() then
