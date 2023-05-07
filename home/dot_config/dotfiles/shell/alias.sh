@@ -32,6 +32,10 @@ if type exa > /dev/null 2>&1; then
     alias exaa='exa -a'
 fi
 
+if type zellij > /dev/null 2>&1; then
+    alias zellij='FIG_NEW_SESSION=1 zellij'
+fi
+
 # alias ls='exa'
 # alias cat='bat'
 # alias find='fd'
