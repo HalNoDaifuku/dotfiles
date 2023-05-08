@@ -1,0 +1,10 @@
+# Default config: https://github.com/alacritty/alacritty/releases/latest/download/alacritty.yml
+
+# Theme
+import:
+  - ~/.config/alacritty/theme.yml
+
+# Font
+font:
+  normal:
+    family: FiraCode Nerd Font Mono
