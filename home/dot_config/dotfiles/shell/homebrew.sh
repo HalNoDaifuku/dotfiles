@@ -117,3 +117,6 @@ PATH="$SCRIPT_HOMEBREW_PATH/opt/coreutils/libexec/gnubin:$PATH"
 if [ -f "$SCRIPT_HOMEBREW_PATH/opt/asdf/libexec/asdf.sh" ]; then
     source $SCRIPT_HOMEBREW_PATH/opt/asdf/libexec/asdf.sh
 fi
+
+# docker
+PATH="$HOME/.docker/bin:$PATH"
