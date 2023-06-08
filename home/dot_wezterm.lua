@@ -12,7 +12,7 @@ end
 
 -- This is where you actually apply your config choices
 config.color_scheme = 'Snazzy'
-config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.font = wezterm.font 'FiraCode Nerd Font'
 config.window_background_image = '~/.config/neko52.png'
 config.window_background_opacity = 0.8
 
