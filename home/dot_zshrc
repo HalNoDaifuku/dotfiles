@@ -1,6 +1,12 @@
 # shellcheck disable=SC2148
+# Use with zellij:
+# https://github.com/withfig/fig/issues/2199#issuecomment-1631111823
+if [[ -n "${ZELLIJ}" ]]; then
+    export TMUX="true"
+fi
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+unset TMUX
 
 export ZSHRC_PATH=$HOME
 
