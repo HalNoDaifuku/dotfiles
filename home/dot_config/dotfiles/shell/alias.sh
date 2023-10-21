@@ -26,16 +26,16 @@ if type colordiff > /dev/null 2>&1; then
     alias diff='colordiff'
 fi
 
-if type exa > /dev/null 2>&1; then
-    alias exa='LS_COLORS= exa -F --color=auto --icons'
-    alias exal='exa -lh'
-    alias exaa='exa -a'
+if type eza > /dev/null 2>&1; then
+    alias eza='LS_COLORS= eza -F --color=auto --icons'
+    alias ezal='eza -lh'
+    alias ezaa='eza -a'
 fi
 
 if type zellij > /dev/null 2>&1; then
     alias zellij='FIG_NEW_SESSION=1 zellij'
 fi
 
-# alias ls='exa'
+# alias ls='eza'
 # alias cat='bat'
 # alias find='fd'
