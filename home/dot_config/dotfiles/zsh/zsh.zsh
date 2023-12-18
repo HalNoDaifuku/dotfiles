@@ -17,6 +17,9 @@ zshaddhistory() {
     [[ ${1%%$'\n'} != ${~HISTORY_IGNORE} ]]
 }
 
+# bindkeys
+bindkey -e
+
 # completions
 setopt globdots
 zstyle ':completion:*' list-colors "${LS_COLORS}"
