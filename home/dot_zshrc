@@ -27,10 +27,6 @@ fi
 # env
 source $ZSHRC_PATH/.config/dotfiles/shell/env.sh
 
-# PATH
-export FPATH="$HOME/.zfunc:$FPATH"
-export EDITOR='vim'
-
 ## Delete the same PATH
 typeset -U PATH
 typeset -U FPATH

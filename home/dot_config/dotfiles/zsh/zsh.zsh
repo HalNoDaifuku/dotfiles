@@ -3,7 +3,7 @@ PROMPT='┌ %F{cyan}%n@%m%f %F{magenta}%d%f
 └ %# '
 RPROMPT='%F{green}[%W %*]%f'
 
-# zsh settings
+# zsh history settings
 export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=3000
 export SAVEHIST=3000
@@ -19,6 +19,9 @@ zshaddhistory() {
 
 # bindkeys
 bindkey -e
+
+# FPATH
+export FPATH="$HOME/.zfunc:$FPATH"
 
 # completions
 setopt globdots
