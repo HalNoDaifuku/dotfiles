@@ -113,6 +113,12 @@ PATH="$SCRIPT_HOMEBREW_PATH/opt/make/libexec/gnubin:$PATH"
 # If you need to use these commands with their normal names, you can add a "gnubin" directory to your PATH with:
 PATH="$SCRIPT_HOMEBREW_PATH/opt/coreutils/libexec/gnubin:$PATH"
 
+# gnu-sed
+PATH="$SCRIPT_HOMEBREW_PATH/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# findutils
+PATH="$SCRIPT_HOMEBREW_PATH/opt/findutils/libexec/gnubin:$PATH"
+
 # asdf
 if [ -f "$SCRIPT_HOMEBREW_PATH/opt/asdf/libexec/asdf.sh" ]; then
     source $SCRIPT_HOMEBREW_PATH/opt/asdf/libexec/asdf.sh
