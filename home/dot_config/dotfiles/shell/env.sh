@@ -19,8 +19,6 @@ fi
 
 if type sccache > /dev/null 2>&1; then
     export RUSTC_WRAPPER=$(which sccache)
-elif type cachepot > /dev/null 2>&1; then
-    export RUSTC_WRAPPER=$(which cachepot)
 fi
 
 # bat
