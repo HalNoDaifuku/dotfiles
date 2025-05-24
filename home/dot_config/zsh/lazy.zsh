@@ -21,8 +21,16 @@ source $ZSHRC_DIR/.config/shell/alias.sh
 # function
 source $ZSHRC_DIR/.config/shell/function.sh
 
-# bindkeys
-bindkey -e
+# completions
+# starship
+if type starship > /dev/null 2>&1; then
+    smartcache comp starship completions zsh
+fi
+
+# sheldon
+if type sheldon > /dev/null 2>&1; then
+    smartcache comp sheldon completions --shell zsh
+fi
 
 # FPATH
 export FPATH="$HOME/.zfunc:$FPATH"
