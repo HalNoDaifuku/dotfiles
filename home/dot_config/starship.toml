@@ -11,6 +11,7 @@ $battery\
 $status\
 $os\
 $container\
+$netns\
 $shell\
 $character"""
 right_format = """
