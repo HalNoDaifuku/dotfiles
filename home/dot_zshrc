@@ -1,6 +1,4 @@
 # shellcheck disable=SC2148
-# CodeWhisperer pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 
 export ZSHRC_PATH=$HOME
 
@@ -30,6 +28,3 @@ autoload -Uz compinit; compinit
 
 # starship
 eval "$(starship init zsh)"
-
-# CodeWhisperer post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
