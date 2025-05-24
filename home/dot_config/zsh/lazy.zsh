@@ -24,13 +24,5 @@ source $ZSHRC_DIR/.config/shell/function.sh
 # bindkeys
 bindkey -e
 
-# completions
-setopt globdots
-zstyle ':completion:*' list-colors "${LS_COLORS}"
-
 # FPATH
 export FPATH="$HOME/.zfunc:$FPATH"
-
-## Delete the same PATH
-typeset -U PATH
-typeset -U FPATH
