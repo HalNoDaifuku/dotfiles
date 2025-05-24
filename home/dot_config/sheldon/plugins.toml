@@ -12,6 +12,7 @@ github = 'QuarticCat/zsh-smartcache'
 [plugins.zsh-autocomplete]
 github= 'marlonrichert/zsh-autocomplete'
 apply = ['defer']
+hooks.pre = "bindkey -e"
 
 [plugins.zsh-autosuggestions]
 github = 'zsh-users/zsh-autosuggestions'
