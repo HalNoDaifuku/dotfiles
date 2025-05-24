@@ -5,21 +5,21 @@
 export ZSHRC_PATH=$HOME
 
 # zsh settings
-source $ZSHRC_PATH/.config/dotfiles/zsh/zsh.zsh
+source $ZSHRC_PATH/.config/zsh/zsh.zsh
 
 # alias
-source $ZSHRC_PATH/.config/dotfiles/shell/alias.sh
+source $ZSHRC_PATH/.config/shell/alias.sh
 
 # function
-source $ZSHRC_PATH/.config/dotfiles/shell/function.sh
+source $ZSHRC_PATH/.config/shell/function.sh
 
 # Homebrew
 if [ -f /opt/homebrew/bin/brew ] || [ -f /usr/local/bin/brew ] || [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
-    source $ZSHRC_PATH/.config/dotfiles/shell/homebrew.sh
+    source $ZSHRC_PATH/.config/shell/homebrew.sh
 fi
 
 # env
-source $ZSHRC_PATH/.config/dotfiles/shell/env.sh
+source $ZSHRC_PATH/.config/shell/env.sh
 
 ## Delete the same PATH
 typeset -U PATH
