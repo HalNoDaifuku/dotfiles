@@ -1,4 +1,5 @@
 # shellcheck disable=SC2148
+
 # alias
 if type grep > /dev/null 2>&1; then
     alias grep='grep --color=auto'

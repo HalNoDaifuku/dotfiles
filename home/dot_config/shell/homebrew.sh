@@ -1,4 +1,5 @@
 # shellcheck disable=SC2148
+
 # Homebrew
 if [ -f /opt/homebrew/bin/brew ]; then
     export SCRIPT_HOMEBREW_PATH="/opt/homebrew"
@@ -7,7 +8,7 @@ elif [ -f /usr/local/bin/brew ]; then
 elif [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
     export SCRIPT_HOMEBREW_PATH="/home/linuxbrew/.linuxbrew"
 fi
-eval "$($SCRIPT_HOMEBREW_PATH/bin/brew shellenv)"
+smartcache eval $SCRIPT_HOMEBREW_PATH/bin/brew shellenv
 alias brew="PATH='$SCRIPT_HOMEBREW_PATH/bin:$SCRIPT_HOMEBREW_PATH/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/sbin' brew"
 ## extentions
 FPATH=$SCRIPT_HOMEBREW_PATH/share/zsh/site-functions:$FPATH

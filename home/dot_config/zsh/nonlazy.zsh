@@ -1,7 +1,4 @@
-# PROMPT
-PROMPT='┌ %F{cyan}%n@%m%f %F{magenta}%d%f
-└ %# '
-RPROMPT='%F{green}[%W %*]%f'
+# shellcheck disable=SC2148
 
 # zsh history settings
 export HISTFILE=$HOME/.zsh_history
@@ -17,12 +14,5 @@ zshaddhistory() {
     [[ ${1%%$'\n'} != ${~HISTORY_IGNORE} ]]
 }
 
-# bindkeys
-bindkey -e
-
-# FPATH
-export FPATH="$HOME/.zfunc:$FPATH"
-
-# completions
-setopt globdots
-zstyle ':completion:*' list-colors "${LS_COLORS}"
+# starship
+eval "$(starship init zsh)"

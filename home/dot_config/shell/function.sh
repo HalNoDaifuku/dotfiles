@@ -1,4 +1,5 @@
 # shellcheck disable=SC2148
+
 if type bat > /dev/null 2>&1; then
     function cat() {
         command cat $@ | bat --paging=never --plain
